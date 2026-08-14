@@ -1,8 +1,4 @@
 # MiP Dashboard
-A web-based dashboard for the WowWee MiP robot, running on the MiP Power Up - D1 mini library. This interface allows you to control the MiP's LEDs and sounds, configure WiFi, view system information, and display a world clock and weather data from OpenWeatherMap. MiP's eye LEDs dynamically react to weather conditions.
-
-## MiP Robot Web Dashboard for ESP8266
-
 This Arduino sketch hosts a web dashboard on a Wemos D1 Mini to control and interact with a WowWee MiP robot equipped with the [MiP Power Up](https://github.com/Tiogaplanet/MiP_Power_Up) board.
 
 The web interface provides a modern, responsive dashboard with multiple tabs for easy control and monitoring.
