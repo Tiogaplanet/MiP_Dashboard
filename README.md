@@ -1,25 +1,24 @@
 # MiP Dashboard
-A web-based dashboard for the WowWee MiP robot, running on the MiP Power Up - D1 mini library. This interface allows you to control the MiP's LEDs and sounds, configure WiFi, view system information, and display a world clock and weather data from OpenWeatherMap. The MiP's LEDs can dynamically react to weather conditions.
+A web-based dashboard for the WowWee MiP robot, running on the MiP Power Up - D1 mini library. This interface allows you to control the MiP's LEDs and sounds, configure WiFi, view system information, and display a world clock and weather data from OpenWeatherMap. MiP's eye LEDs dynamically react to weather conditions.
 
 ## MiP Robot Web Dashboard for ESP8266
 
-This Arduino sketch hosts a web dashboard on an ESP8266 (like a Wemos D1 Mini) to control and interact with a WowWee MiP robot equipped with the [MiP Power Up](https://github.com/Tiogaplanet/MiP_Power_Up) board.
+This Arduino sketch hosts a web dashboard on a Wemos D1 Mini to control and interact with a WowWee MiP robot equipped with the [MiP Power Up](https://github.com/Tiogaplanet/MiP_Power_Up) board.
 
 The web interface provides a modern, responsive dashboard with multiple tabs for easy control and monitoring.
 
 ### Features
 
-- **System Info**: View MiP hardware/software versions, library version, and ESP8266 network details.
-- **Control**: Manually control the MiP's head (eye) LEDs, chest LED (color and blinking), and play various sounds.
+- **System Info**: View MiP hardware/software versions, library version, and WiFi network details.
+- **Control**: Manually control MiP's eye LEDs, chest LED (color and blinking), and play various sounds.
 - **WiFi Manager**: Scan for and connect to nearby WiFi access points.
 - **World Clock**: A world clock with automatic timezone detection from your browser and an alarm clock feature to wake up your MiP.
-- **Weather**: View current weather for a configurable city using the OpenWeatherMap API. The MiP's LEDs will automatically reflect the weather conditions (chest color for temperature, eye animation for rain).
+- **Weather**: View current weather for a configurable city using the OpenWeatherMap API. MiP's LEDs automatically reflect the weather conditions (chest color for temperature, eye animation for rain).
 
 ### Requirements
 
 1.  **Hardware**:
-    *   A WowWee MiP robot modified with the [MiP Power Up](https://github.com/Tiogaplanet/MiP_Power_Up) board.
-    *   An ESP8266-based board, such as the Wemos D1 Mini.
+    *   A WowWee MiP modified with the [MiP Power Up](https://github.com/Tiogaplanet/MiP_Power_Up) board.
 
 2.  **Arduino Libraries**:
     *   [MiP Power Up - D1 mini library](https://github.com/Tiogaplanet/MPU_D1_mini_lib)
@@ -56,6 +55,6 @@ The web interface provides a modern, responsive dashboard with multiple tabs for
 
 ### Usage
 
-Once the ESP8266 connects to your WiFi network, it will print its IP address to the Serial Monitor. Open a web browser and navigate to `http://<mip-ip>/` or `http://mip-dashboard.local/` to access the dashboard.
+Once the D1 mini connects to your WiFi network, it will print its IP address to the Serial Monitor. Open a web browser and navigate to `http://<mip-ip>/` or `http://mip-dashboard.local/` to access the dashboard.
 
 If the board fails to connect to WiFi, it will start its own Access Point named "MiP-Dashboard" with the password "miprobot". Connect to this network and use the WiFi tab to configure a connection to your home network.
