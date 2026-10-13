@@ -24,7 +24,7 @@
 #include <WiFiClientSecureBearSSL.h>
 #include <ArduinoJson.h>
 #include <time.h>
-#include <MiP_Power_Up_-_D1_mini.h>
+#include <MiP_Power_Up.h>
 #include "secrets.h"  // Contains SSID, password, and the OpenWeatherMap API key.
 
 // ---------------------------------------------------------------------------
